@@ -1,0 +1,37 @@
+
+body{
+    background:linear-gradient(to right, black ,white,red);
+}
+
+.heading{text-align: center;margin-top:10px; }
+
+.display-data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap:20px;
+}
+
+.character-card{
+    width : 400px;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-weight: bolder;
+    background-color:white;
+    box-shadow: 10px 10px 10px gold;
+    margin: auto;
+    background: radial-gradient( pink,grey)
+}
+
+.character-image{
+    height:100px;
+    width:100px;
+}
+
+/*changing the properties based on screen size for responsiveness using media query*/
+@media screen and (max-width:768px){
+    .display-data{
+        flex-direction: column;
+    }
+}
